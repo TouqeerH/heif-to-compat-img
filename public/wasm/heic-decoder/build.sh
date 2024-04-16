@@ -1,0 +1,1 @@
+emcc heic-decoder/main.c -o heic-decoder.js -s MODULARIZE -s WASM=1  -s ENVIRONMENT='web' -s EXPORT_NAME="HEIC_DECODER" -s FORCE_FILESYSTEM -s EXPORTED_RUNTIME_METHODS=ccall,cwrap -s EXPORTED_FUNCTIONS=_main,_test,_read_file
